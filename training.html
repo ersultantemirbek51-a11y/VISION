@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Training | VISION</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<main class="page">
+
+
+<section class="article-header">
+
+<h1>VISION TRAINING</h1>
+
+<p class="subtitle">
+Тренируй внимание.
+Развивай зрительное восприятие.
+Заботься о своих глазах.
+</p>
+
+</section>
+
+
+
+<section class="training-warning">
+
+<h2>Перед началом</h2>
+
+<p>
+
+Выполняй упражнения
+в комфортном темпе.
+
+Если появляется усталость
+или дискомфорт —
+сделай перерыв.
+
+VISION рекомендует
+короткие занятия
+продолжительностью
+20–30 минут.
+
+</p>
+
+</section>
+
+
+
+
+<section
+class="training-list"
+id="trainingList">
+
+
+
+<!-- ===== ФОКУС ===== -->
+
+<div class="training-card">
+
+<h2>Фокус</h2>
+
+<p>
+
+Найди момент,
+когда объект становится
+максимально чётким.
+
+</p>
+
+
+
+<div class="training-settings">
+
+<h3>Длительность</h3>
+
+
+<label>
+
+<input
+type="radio"
+name="focus-time"
+value="10">
+
+10–15 секунд
+
+</label>
+
+
+
+<label>
+
+<input
+type="radio"
+name="focus-time"
+value="20"
+checked>
+
+20–25 секунд
+
+</label>
+
+
+
+<label>
+
+<input
+type="radio"
+name="focus-time"
+value="30">
+
+30–35 секунд
+
+</label>
+
+</div>
+
+
+
+<button
+class="start-training"
+id="startFocus">
+
+Начать тренировку
+
+</button>
+
+</div>
+
+
+
+
+
+
+<!-- ===== ЦВЕТОВОЕ ВНИМАНИЕ ===== -->
+
+<div class="training-card">
+
+<h2>Цветовое внимание</h2>
+
+<p>
+
+Найди круг,
+который отличается
+только оттенком.
+
+</p>
+
+
+
+<div class="training-settings">
+
+<h3>Количество уровней</h3>
+
+
+
+<label>
+
+<input
+type="radio"
+name="color-level"
+value="5">
+
+5 уровней
+
+</label>
+
+
+
+<label>
+
+<input
+type="radio"
+name="color-level"
+value="8"
+checked>
+
+8 уровней
+
+</label>
+
+
+
+<label>
+
+<input
+type="radio"
+name="color-level"
+value="12">
+
+12 уровней
+
+</label>
+
+
+</div>
+
+
+
+<button
+class="start-training"
+id="startColor">
+
+Начать тренировку
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ========================= -->
+<!--       РЕЖИМ ФОКУСА        -->
+<!-- ========================= -->
+
+
+<section
+class="focus-training"
+id="focusTraining">
+
+
+<div
+class="prepare-stage"
+id="prepareStage">
+
+
+<h2>
+
+Подготовьтесь
+
+</h2>
+
+
+<div id="countdown">
+
+2
+
+</div>
+
+
+</div>
+
+
+
+
+<div
+class="exercise-stage"
+id="exerciseStage">
+
+
+<div class="focus-area">
+
+
+<div
+class="focus-target"
+id="focusTarget">
+
+
+<div class="focus-dot"></div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div
+class="result-stage"
+id="resultStage">
+
+
+<h2>
+
+Результат
+
+</h2>
+
+
+<p>
+
+Точность реакции:
+
+</p>
+
+
+
+<div id="resultScore">
+
+0 мс
+
+</div>
+
+
+
+
+<button
+class="repeat-training"
+id="repeatTraining">
+
+Повторить
+
+</button>
+
+
+
+<button
+class="back-training"
+id="backTraining">
+
+Вернуться
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ========================= -->
+<!--    ЦВЕТОВОЕ ВНИМАНИЕ      -->
+<!-- ========================= -->
+
+
+<section
+class="color-training"
+id="colorTraining">
+
+
+<div
+class="prepare-stage"
+id="colorPrepare">
+
+
+<h2>
+
+Подготовьтесь
+
+</h2>
+
+
+<div id="colorCountdown">
+
+3
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div
+class="color-game"
+id="colorGame">
+
+
+<div class="color-top">
+
+
+<div class="color-level">
+
+Уровень
+
+<span id="colorLevel">
+
+1
+
+</span>
+
+</div>
+
+
+
+<div class="color-errors">
+
+Ошибок
+
+<span id="colorMistakes">
+
+0
+
+</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div
+class="color-grid"
+id="colorGrid">
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div
+class="color-result"
+id="colorResult">
+
+
+<h2>
+
+Тренировка завершена
+
+</h2>
+
+
+
+
+<p>
+
+Уровней пройдено
+
+</p>
+
+
+
+<div id="colorFinished">
+
+0
+
+</div>
+
+
+
+
+<p>
+
+Ошибок
+
+</p>
+
+
+
+<div id="colorErrors">
+
+0
+
+</div>
+
+
+
+
+<p>
+
+Время
+
+</p>
+
+
+
+<div id="colorTime">
+
+0 сек
+
+</div>
+
+
+
+
+<button
+class="repeat-training"
+id="repeatColor">
+
+Повторить
+
+</button>
+
+
+
+
+<button
+class="back-training"
+id="backColor">
+
+Вернуться
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+<nav class="bottom-nav">
+
+<a href="index.html">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+    <path d="M3 11L12 3l9 8"/>
+    <path d="M5 10v10h14V10"/>
+    <path d="M9 20v-6h6v6"/>
+</svg>
+
+<span>Home</span>
+
+</a>
+
+
+<a href="vision-lab.html">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+
+    <path d="M9 3h6"/>
+    <path d="M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>
+    <path d="M8 15h8"/>
+
+</svg>
+
+<span>Lab</span>
+
+</a>
+
+
+
+
+<a href="training.html" class="active">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+
+    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12"/>
+    <circle cx="12" cy="12" r="3"/>
+
+</svg>
+
+<span>Train</span>
+
+</a>
+
+
+
+<a href="profile.html">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+
+    <circle cx="12" cy="8" r="4"/>
+    <path d="M4 21c1-5 5-7 8-7s7 2 8 7"/>
+
+</svg>
+
+<span>My Vision</span>
+
+</a>
+
+</nav>
+
+
+
+
+<div class="reminder-overlay" id="reminderOverlay">
+
+    <div class="reminder-card">
+
+        <h2>Пора сделать небольшой перерыв</h2>
+
+        <p>
+
+            Чтобы снизить нагрузку на глаза,
+
+            посмотри вдаль, несколько раз поморгай
+
+            и немного отдохни.
+
+        </p>
+
+        <button id="closeReminder">
+
+            Продолжить
+
+        </button>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>My Vision | VISION</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<div class="background"></div>
+
+		<main class="page">
+			<section class="article-header">
+				<h1>MY VISION</h1>
+
+				<p class="subtitle">
+					Твоё пространство для отслеживания прогресса и тренировок.
+				</p>
+			</section>
+
+			<!-- ПРОГРЕСС -->
+
+			<section class="info-card">
+				<h2>Мой прогресс</h2>
+
+				<p>
+    Тренировок пройдено:
+    <strong id="totalTrainings">0</strong>
+</p>
+
+<p>
+    Время занятий:
+    <strong id="totalMinutes">0 минут</strong>
+</p>
+
+<p>
+    Последняя тренировка:
+    <strong id="lastTraining">—</strong>
+</p>
+			</section>
+
+			<!-- ЦЕЛЬ -->
+
+			<section class="info-card">
+				<h2>Моя цель</h2>
+
+				<div class="goal-wrapper">
+					<textarea
+						class="goal-input"
+						placeholder="Напиши свою цель..."
+					></textarea>
+				</div>
+			</section>
+
+<!-- ДОСТИЖЕНИЯ -->
+
+<section class="info-card">
+
+    <h2>
+        Достижения
+    </h2>
+
+
+    <div id="achievements">
+
+        <p>
+            Пока нет открытых достижений.
+        </p>
+
+    </div>
+
+
+</section>
+
+			<!-- ИСТОРИЯ -->
+
+<section class="info-card">
+
+    <h2>История тренировок</h2>
+
+    <div id="trainingHistory">
+
+        <p>
+            Пока нет тренировок.
+        </p>
+
+    </div>
+
+
+    <button id="clearHistory">
+        Очистить историю
+    </button>
+
+
+</section>
+
+			<!-- НАСТРОЙКИ -->
+
+			<div class="profile-settings">
+				<svg class="nav-icon" viewBox="0 0 24 24">
+					<circle cx="12" cy="12" r="3" />
+
+					<path
+						d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 0 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21a2 2 0 0 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 0 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 0 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3h.1A1.7 1.7 0 0 0 10 3.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 0 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9v.1a1.7 1.7 0 0 0 1.6 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5.8z"
+					/>
+				</svg>
+
+				<span> Настройки </span>
+			</div>
+			<div class="settings-panel" id="settingsPanel">
+
+    <h2>Настройки</h2>
+
+    <div class="setting-item">
+
+    <h3>Размер текста</h3>
+
+  <button id="normalText">
+    Обычный
+</button>
+
+<button id="largeText">
+    Большой
+</button>
+
+</div>
+
+
+<div class="setting-item">
+
+    <h3>Тема</h3>
+
+  <button id="lightTheme">
+    Светлая
+</button>
+
+<button id="darkTheme">
+    Тёмная
+</button>
+
+</div>
+
+
+<div class="setting-item">
+
+    <h3>Напоминания</h3>
+
+    <button id="remindersOn">
+        Включено
+    </button>
+
+    <button id="remindersOff">
+        Отключено
+    </button>
+
+</div>
+
+
+		</main>
+
+<nav class="bottom-nav">
+
+<a href="index.html">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+    <path d="M3 11L12 3l9 8"/>
+    <path d="M5 10v10h14V10"/>
+    <path d="M9 20v-6h6v6"/>
+</svg>
+
+<span>Home</span>
+
+</a>
+
+
+<a href="vision-lab.html">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+    <path d="M9 3h6"/>
+    <path d="M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>
+    <path d="M8 15h8"/>
+</svg>
+
+<span>Lab</span>
+
+</a>
+
+
+<a href="training.html">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12"/>
+    <circle cx="12" cy="12" r="3"/>
+</svg>
+
+<span>Train</span>
+
+</a>
+
+
+<a href="profile.html" class="active">
+
+<svg class="nav-icon" viewBox="0 0 24 24">
+    <circle cx="12" cy="8" r="4"/>
+    <path d="M4 21c1-5 5-7 8-7s7 2 8 7"/>
+</svg>
+
+<span>My Vision</span>
+
+</a>
+
+</nav>
+
+
+</div>
+
+		<div class="reminder-overlay" id="reminderOverlay">
+
+    <div class="reminder-card">
+
+        <h2>Пора сделать небольшой перерыв</h2>
+
+        <p>
+            Чтобы снизить нагрузку на глаза,
+            посмотри вдаль, несколько раз поморгай
+            и немного отдохни.
+        </p>
+
+        <button id="closeReminder">
+            Продолжить
+        </button>
+
+    </div>
+
+</div>
+		<script src="script.js"></script>
+	</body>
+</html>

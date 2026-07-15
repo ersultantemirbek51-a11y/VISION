@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как устроен глаз | Vision</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background"></div>
+<main class="article-page">
+<a href="vision-lab.html" class="back-button">
+← Vision Lab
+</a>
+<h1>Как устроен глаз</h1>
+<p class="subtitle">
+Глаз собирает свет, а мозг превращает его в изображение окружающего мира.
+</p>
+<section class="eye-diagram">
+<div class="eye-image">
+<div class="eye-model">
+<img src="IMG_9111.jpg" class="eye-photo" alt="Строение глаза">
+<div class="hotspot front-eye"></div>
+<div class="hotspot back-eye"></div>
+</div>
+</div>
+</section>
+<section class="info-card">
+<p class="hint">
+Нажмите на любую часть глаза, чтобы узнать, как она работает.
+</p>
+<h2 id="partTitle"></h2>
+<p id="partText"></p>
+</section>
+<section class="fact-card">
+<h2>Интересный факт</h2>
+<p>
+Изображение на сетчатке формируется перевёрнутым, а мозг воспринимает мир в привычном положении.
+</p>
+</section>
+<section class="science-card">
+
+<h2>Что говорит наука</h2>
+
+<p>
+Свет проходит через несколько частей глаза, прежде чем превратиться в изображение.
+</p>
+
+<p>
+Роговица и хрусталик помогают сфокусировать свет, а сетчатка содержит светочувствительные клетки, которые преобразуют его в нервные сигналы. Эти сигналы передаются по зрительному нерву в головной мозг, где формируется наше восприятие окружающего мира.
+</p>
+
+</section>
+
+
+<p class="science-note">
+
+VISION использует информацию, основанную на современных научных исследованиях и рекомендациях специалистов. Материалы проекта предназначены для обучения и не заменяют консультацию врача-офтальмолога.
+
+</p>
+<section class="memory-check">
+
+<h2>Проверь, что запомнил</h2>
+
+
+<div class="quiz">
+
+
+<div class="question">
+
+<p>1. Какая часть глаза первой преломляет свет?</p>
+
+<button onclick="checkAnswer(this, true)">
+Роговица
+</button>
+
+<button onclick="checkAnswer(this, false)">
+Сетчатка
+</button>
+
+<button onclick="checkAnswer(this, false)">
+Зрительный нерв
+</button>
+
+</div>
+
+
+
+<div class="question">
+
+<p>2. Какая часть глаза регулирует количество света?</p>
+
+<button onclick="checkAnswer(this, false)">
+Зрачок
+</button>
+
+<button onclick="checkAnswer(this, true)">
+Радужка
+</button>
+
+<button onclick="checkAnswer(this, false)">
+Роговица
+</button>
+
+</div>
+
+
+
+<div class="question">
+
+<p>3. Какая часть передаёт сигналы от глаза в мозг?</p>
+
+<button onclick="checkAnswer(this, false)">
+Сетчатка
+</button>
+
+<button onclick="checkAnswer(this, true)">
+Зрительный нерв
+</button>
+
+<button onclick="checkAnswer(this, false)">
+Радужка
+</button>
+
+</div>
+
+
+</div>
+
+
+</section>
+<section class="thought-box">
+<h2>Что тебя удивило больше всего?</h2>
+<textarea placeholder="Поделись своей мыслью..."></textarea>
+<p class="thanks">
+Спасибо, что изучил эту тему.
+Надеемся, она помогла лучше понять, как работает зрение.
+</p>
+</section>
+<section class="next-topic">
+<a href="focus.html">
+Продолжить →
+Как работает фокус
+</a>
+</section>
+</main>
+
+
+
+<div class="reminder-overlay" id="reminderOverlay">
+
+    <div class="reminder-card">
+
+        <h2>Пора сделать небольшой перерыв</h2>
+
+        <p>
+
+            Чтобы снизить нагрузку на глаза,
+
+            посмотри вдаль, несколько раз поморгай
+
+            и немного отдохни.
+
+        </p>
+
+        <button id="closeReminder">
+
+            Продолжить
+
+        </button>
+
+    </div>
+
+</<div>
+<script src="script.js"></script>
+</body>
+</html>
